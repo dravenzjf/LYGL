@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XQSettingHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="guy-lL-hI0">
+                    <rect key="frame" x="152.5" y="50" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5p9-3n-Uhl"/>
+                        <constraint firstAttribute="width" secondItem="guy-lL-hI0" secondAttribute="height" multiplier="1:1" id="smh-cQ-w34"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="唧唧复唧唧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRF-eF-o3F">
+                    <rect key="frame" x="151.5" y="130" width="71.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个家伙还在喝茶，没空写签名~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-Tg-MPu">
+                    <rect key="frame" x="83.5" y="157" width="208" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="guy-lL-hI0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5m8-CV-fz8"/>
+                <constraint firstItem="JRF-eF-o3F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EGj-LQ-E7o"/>
+                <constraint firstItem="guy-lL-hI0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="b6U-EM-PGA"/>
+                <constraint firstItem="Fii-Tg-MPu" firstAttribute="top" secondItem="JRF-eF-o3F" secondAttribute="bottom" constant="10" id="ePy-mJ-yL5"/>
+                <constraint firstItem="JRF-eF-o3F" firstAttribute="top" secondItem="guy-lL-hI0" secondAttribute="bottom" constant="10" id="pha-XW-PXo"/>
+                <constraint firstItem="Fii-Tg-MPu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xVv-iK-kro"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="508" height="720"/>
+    </resources>
+</document>
